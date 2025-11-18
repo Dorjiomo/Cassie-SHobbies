@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CassieHobbies
+  </title>
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a href="javascript:history.back()" 
+   style="position: absolute; left: 40px; top: 40px; font-size: 62px; text-decoration: none; color: black;">
+  &#8592;
+</a>
+
+<div style="text-align: center; padding-top: 20px;">
+  <h1 style="font-family: 'Great Vibes', cursive;">CrochetProjects</h1>
+</div>
+
+ 
+
+  <div class="container">
+    <!-- Image Card -->
+    
+    <div class="index-image">
+      <img src="img/MikasaScarf.png" alt="Index Image" onclick="openModal(this)">
+      <p> MikasaScarf</p>
+      <a href="img/MikasaScarf.png" download class="download-link">Download</a>
+    </div>
+
+
+    <div class="index-image">
+      <img src="img/Dress.png" alt="Index Image" onclick="openModal(this)">
+      <p> Dress </p>
+      <a href="img/Dress.png" download class="download-link">Download</a>
+    </div>
+
+    <div class="index-image">
+      <img src="img/Poncho.png" alt="Index Image" onclick="openModal(this)">
+      <p> Poncho</p>
+      <a href="img/Poncho.png" download class="download-link">Download</a>
+    </div>
+
+     <div class="index-image">
+      <img src="img/Bookmark.png" alt="Index Image" onclick="openModal(this)">
+      <p> Bookmark</p>
+      <a href="img/Bookmark.png" download class="download-link">Download</a>
+    </div>
+
+    <div class="index-image">
+      <img src="img/Legwarmer.png" alt="Index Image" onclick="openModal(this)">
+      <p> Legwarmer</p>
+      <a href="img/Legwarmer.png" download class="download-link">Download</a>
+    </div>
+    
+    <div class="index-image">
+      <img src="img/BottleHolder.png" alt="Index Image" onclick="openModal(this)">
+      <p> BottleHolder</p>
+      <a href="img/BottleHolder.png" download class="download-link">Download</a>
+    </div>
+
+     <div class="index-image">
+      <img src="img/Bottle.png" alt="Index Image" onclick="openModal(this)">
+      <p> Taylor Swift : Lover</p>
+      <a href="img/Bottle.png" download class="download-link">Download</a>
+    </div>
+
+    <div class="index-image">
+      <img src="img/Hat.png" alt="Index Image" onclick="openModal(this)">
+      <p> Hat</p>
+      <a href="img/Hat.png download class="download-link">Download</a>
+    </div>
+   
+     <div class="index-image">
+      <img src="img/Pencilcase.png" alt="Index Image" onclick="openModal(this)">
+      <p>Pencilcase</p>
+      <a href="img/Pencilcase.png" download class="download-link">Download</a>
+    </div>
+  </div>
+
+  <p>You can do this Cassie.
+  </p>
+
+
+  <!-- Modal for Full View -->
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+
+  <script>
+    function openModal(imgElement) {
+      var modal = document.getElementById("myModal");
+      var modalImg = document.getElementById("modalImage");
+      modal.style.display = "block";
+      modalImg.src = imgElement.src;
+    }
+
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+
+    // Close modal on click outside image
+    window.onclick = function(event) {
+      const modal = document.getElementById("myModal");
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
+
+
+
+</body>
+
